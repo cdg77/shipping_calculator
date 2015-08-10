@@ -9,9 +9,9 @@ describe ('Parcel') do
     end
   end
   describe('#cost_to_ship') do
-    it('takes the dimensions, weight, and distance of the parcel and returns a cost value') do
+    it('takes the dimensions, weight, distance, and delivery speed of the parcel and returns a cost') do
       new_parcel = Parcel.new(2, 2.5, 2)
-      expect(new_parcel.cost_to_ship(10, 10)).to(eq(1.2))
+      expect(new_parcel.cost_to_ship(10, 10, "Same-Day")).to(eq(21.2))
     end
   end
 

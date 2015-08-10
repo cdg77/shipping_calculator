@@ -10,11 +10,20 @@ class Parcel
     return volume
   end
 
-  define_method(:cost_to_ship) do |distance, weight|
+  define_method(:cost_to_ship) do |distance, weight, speed|
     dimensions = self.volume * 0.03
     distance *= 0.05
     weight *= 0.04
-    return (dimensions + distance + weight).round(2)
+    if speed == "Same-Day"
+      speed = 20
+    elsif speed == "One-Day"
+      speed = 15
+    elsif speed == "Two-Day"
+      speed = 10
+    else
+      speed = 5
+    end
+    return (dimensions + distance + weight + speed).round(2)
   end
 
 end
