@@ -1,0 +1,55 @@
+<h1>Parcel Shipping Cost Calculator</h1>
+
+<h4>Please enter dimensions and choose a shipping time below :</h4>
+<form action="/shipping_costs">
+    <div class=''>
+      <label for="length">Length</label>
+      <input type="text" name="length">
+    </div>
+    <div>
+      <label for="height">Height</label>
+      <input type="text" name="height">
+    </div>
+    <div>
+      <label for="width">Width</label>
+      <input type="text" name="width">
+    </div>
+
+    <div>
+      <label for="weight">Weight</label>
+      <input type="text" name="weight">
+    </div>
+    <div>
+      <label for="distance">Distance</label>
+      <input type="text" name="distance">
+    </div>
+    <div>
+      <label for="speed">Speed</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="speed" value="Same-Day">
+          Same-Day Shipping
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="speed" value="One-Day">
+          One-Day Shipping
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="speed" value="Two-Day">
+          Two-Day Shipping
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="speed" value="Whenever">
+          Whenever Shipping
+        </label>
+      </div>
+    </div>
+    <button type= 'submit'>Submit</button>
+
+</form>

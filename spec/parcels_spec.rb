@@ -14,5 +14,4 @@ describe ('Parcel') do
       expect(new_parcel.cost_to_ship(10, 10, "Same-Day")).to(eq(21.2))
     end
   end
-
 end
